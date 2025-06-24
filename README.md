@@ -43,6 +43,13 @@ The model is evaluated using:
 - A BLEU score of 0.652 indicates that the generated responses have approximately 65.2% overlap with the reference answers in terms of matching n-grams.
 - The model achieved an f1-score of 0.734 suggesting a good balance between precision and recall.
 
+### Deployment
+
+Our model and application are deployed separately for better modularity due to the large file sizes:
+
+- **Model Deployment**: The trained model is hosted on [Hugging Face Hub](https://huggingface.co/Bernice-24/career-recommendation-model)
+- **Application Deployment**: The chatbot is deployed as a [Hugging Face Space](https://huggingface.co/spaces/Bernice-24/Career-recommendation-chatbot), providing a UI for users to interact with the app by asking questions and getting career recommendations.
+
 ## Example Usage
 
 ![Screenshot 2025-06-22 213435](https://github.com/user-attachments/assets/7fac352a-aa3e-4d11-a3c3-9c1bf5322e33)
@@ -55,7 +62,7 @@ The model is evaluated using:
 
 ```
 Career-Recommendation-Chatbot/
-├── app                  # Contains gradio demo app.py
+├── app.py                  # Contains gradio demo app.py
 ├── notebook             # Contains .ipynb notebook
 ├── saved-models/           # Fine-tuned model
 ├── requirements.txt      # installed libraries
