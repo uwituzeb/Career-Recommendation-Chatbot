@@ -43,7 +43,7 @@ The model is evaluated using:
 - A BLEU score of 0.652 indicates that the generated responses have approximately 65.2% overlap with the reference answers in terms of matching n-grams.
 - The model achieved an f1-score of 0.734 suggesting a good balance between precision and recall.
 
-### Deployment
+## Deployment
 
 Our model and application are deployed separately for better modularity due to the large file sizes:
 
